@@ -586,7 +586,258 @@
 //         alert("Shoot me now!");
 // }
 
-    // Completing switch statement:
-    // default :
-    // alert("Shoot me now!");
-    // }
+// Completing switch statement:
+// default :
+// alert("Shoot me now!");
+// }
+
+// ============= Chp 41: while loops =============
+
+// var i = 0;
+// while (i <= 3) {
+// alert(i);
+// i++;
+// }
+
+// ============= Chp 42: do...while loops =============
+
+// var i = 0;
+// do {
+//     alert(i);
+//     i++;
+// } while (i <= 3);
+
+// var i = 0;
+// do {
+//     alert(i);
+//     i++;
+// } while (i < 0);
+
+// ============= Chp 44: Commenting =============
+
+// This is a comment, ignored by the browser
+
+/* Commenting more than
+    One line together. 
+*/
+
+// ============= Chp 45: Events: link =============
+
+// function popup(message) {
+//     alert(message);
+//     }
+
+// ============= Chp 46: Events: Button =============
+
+// Output is in HTML File
+
+// ============= Chp 47: Events: Mouse =============
+
+// Output is in HTML File
+
+// ============= Chp 48: Events: Fields =============
+
+// Output is in HTML File
+
+// ============= Chp 49: Reading field values =============
+
+// function checkAddress(fieldId) {
+//     if (document.getElementById(fieldId).value === "") {
+//         alert("Email address required.");
+//     }
+// }
+
+// function checkAddress(fieldId) {
+//     var val = document.getElementById(fieldId).value;
+//     if (val === "") {
+//         alert("Email address required.");
+//     }
+// }
+
+// ============= Chp 50: Setting field values =============
+
+// function fillCity() {
+//     var cityName;
+//     var zipEntered = document.getElementById("zip").value;
+//     switch (zipEntered) {
+//         case "60608":
+//             cityName = "Chicago";
+//             break;
+//         case "68114":
+//             cityName = "Omaha";
+//             break;
+//         case "53212":
+//             cityName = "Milwaukee";
+//     }
+//     document.getElementById("city").value = cityName;
+// }
+
+// ============= Chp 51: Reading and setting paragraph text =============
+
+// function expandLoris() {
+//     var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety ofdistinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have severaladaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.Slow lorises have a toxic bite, a rare trait among mammals.";
+//     document.getElementById("slowLoris").innerHTML = expandedParagraph;
+// }
+
+// function placeAList() {
+//     var listToPlace = "<ol><li>Slow loris</li><li>Fast loris</li><li>Just-right loris</li></ol>";
+//     document.getElementById("lorisList").innerHTML = listToPlace;
+// }
+
+// function peekAtContent() {
+//     var whatsThere = document.getElementById("content").innerHTML;
+// }
+
+// ============= Chp 52: Manipulating images and text =============
+
+// function makeInvisible() {
+//     document.getElementById("ugly").className = "hidden";
+//     }
+
+// ============= Chp 53: Swapping images =============
+
+// function swapPic() {
+//     document.getElementById("before").src = "after-pic.jpg";
+// }
+
+// function swapPic(eId, newPic) {
+//     document.getElementById(eId).src = newPic;
+// }
+
+// ============= Chp 54: Swapping images and setting classes =============
+
+// function swapPic() {
+//     document.getElementById("before").src = "after-pic.jpg";
+// }
+
+// function swapPic() {
+//     var pic = document.getElementById("before");
+//     pic.src = "after-pic.jpg";
+// }
+
+// function getAddress() {
+//     var link = document.getElementById("link1");
+//     var address = link.href;
+// }
+
+// ============= Chp 55: Setting styles =============
+
+// function makeBig() {
+//     document.getElementById("p1").style.fontSize = "2em";
+//     }
+
+//     document.getElementById("pic99").style.cssFloat = "left";
+
+//     document.getElementById("div9").style.visibility = "hidden";
+
+//     document.getElementById("mainPic").style.margin = "0 10px 0 10px;";
+
+//     var m = document.getComputedStyle("mainPic").margin;
+
+// ============= Chp 56: Target all elements by tag name =============
+
+// var par = document.getElementsByTagName("p");
+
+// var textInMiddleParagraph = par[1].innerHTML;
+
+// par[1].innerHTML = "This SUV is too big.";
+
+// for (var i = 0; i < par.length; i++) {
+//     par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
+// }
+
+// ============= Chp 57: Target some elements by tag name =============
+
+// var e = document.getElementByID("rules");
+// var paragraphs = e.getElementsByTagName("p");
+
+// document.getElementsByTagName("p");
+
+// e.getElementsByTagName("p");
+
+// var t = document.getElementById("table9");
+// var cells = t.getElementsByTagName("td");
+// for (var i = 0; i < cells.length; i++) {
+// cells[i].style.backgroundColor = "pink";
+// }
+
+// ============= Chp 58: The DOM =============
+
+// 1st level: document
+// 2nd level: <html>
+// 3rd level: <head>
+// 4th level: <title>
+// 5th level: Simple document
+// </title>
+// </head>
+// 3rd level <body>
+// 4th level <p>
+// 5th level There's not much to this.
+// </p>
+// </body>
+// </html>
+
+
+// 1st level: document
+// 2nd level: <html>
+// 3rd level: <head>
+// 4th level: <title>
+// 5th level: Simple document
+// </title>
+// </head>
+// 3rd level <body>
+// 4th level <div>
+// 5th level <p>
+// 6th level There's not much to this.
+// </p>
+// 5th level <p>
+// 6th level Nor to this.
+// </p>
+// </div>
+// </body
+// </html>
+
+// ============= Chp 59: The DOM: Parents and children =============
+
+// 1st level: document
+// 2nd level: <html>
+// 3rd level: <head>
+// 4th level: <title>
+// 5th level: Simple document
+// </title>
+// </head>
+// 3rd level <body>
+// 4th level <div>
+// 5th level <p>
+// 6th level There's not much to this.
+// </p>
+// 5th level <p>
+// 6th level Nor to this.
+// </p>
+// </div>
+// </body>
+// </html>
+
+// ============= Chp 58: The DOM: Finding children =============
+
+// var eField = document.getElementById("email");
+// var eField = document.getElementsByTagName("p");
+// var contents = p[2].innerHTML;
+
+// var d = document.getElementById("div3");
+// var p = d.getElementsByTagName("p");
+// var contents = p[2].innerHTML;
+
+// var p = document.getElementsByTagName("p");
+// var contents = p[4].innerHTML;
+
+// var div = document.getElementById("ny");
+// var p = div.getElementsByTagName("p");
+// var contents = p[1].innerHTML;
+
+// var p = document.childNodes[0].childNodes[1].childNodes[1].childNodes[1];
+// var contents = p.innerHTML;
+
+var d = document.getElementById("ny");
+var p = d.childNodes[1];
+var contents = p.innerHTML;
