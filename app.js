@@ -420,3 +420,173 @@
 // }
 // num = Number(str);
 // prettyNum = num.toFixed(2);
+
+// ============= Chp 31: Getting the current date and time =============
+
+// var dateString = rightNow.toString();
+
+// var rightNow = new Date();
+// var theDay = rightNow.getDay();
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var now = new Date();
+// var theDay = now.getDay();
+// var nameOfToday = dayNames[theDay];
+
+// ============= Chp 32: Extracting parts of the date and time =============
+
+// var d = new Date();
+// var currentMonth = d.getMonth();
+
+// var dayOfMonth = d.getDate();
+
+// var currYr = d.getFullYear();
+
+// var currentHrs = d.getHours();
+
+// var currMins = d.getMinutes();
+
+// var currSecs = d.getSeconds()
+
+// var currMills = d.getMilliseconds();
+
+// var millsSince = d.getTime();
+
+// ============= Chp 33: Specifying a date and time =============
+
+// var today = new Date();
+// var doomsday = new Date("June 30, 2035");
+// var msToday = today.getTime();
+// var msDoomsday = doomsday.getTime();
+// var msDiff = msDoomsday - msToday;
+// var dDiff = msDiff / (1000 * 60 * 60 * 24);
+// dDiff = Math.floor(dDiff);
+
+// var d = new Date("July 21, 1983 13:25:00");
+
+// ============= Chp 34: Changing elements of a date and time =============
+
+// var d = new Date();
+// d.setFullYear(2001);
+
+// var d = new Date();
+// d.setMonth(11);
+
+// var d = new Date();
+// d.setDate(15);
+
+// var d = new Date();
+// d.setHours(13);
+
+// var d = new Date();
+// d.setMinutes(05);
+
+// var d = new Date();
+// d.setSeconds(55);
+
+// var d = new Date();
+// d.setMilliseconds(867);
+
+// ============= Chp 35: Functions =============
+
+// function tellTime() {
+//     var now = new Date();
+//     var theHr = now.getHours();
+//     var theMin = now.getMinutes();
+//     alert("Current time: " + theHr + ":" + theMin);
+// }
+
+// tellTime();
+
+// ============= Chp 36: Functions: Passing them data =============
+
+// function greetUser() {
+//     alert("Hello, there.");
+// }
+
+// greetUser("Hello, there.");
+
+// function greetUser(greeting) {
+//     alert(greeting);
+//     }
+
+//     var whatever = "Hello, there.";
+// greetUser(whatever);
+
+// ============= Chp 37: Functions: Passing data back from them =============
+
+// function calcTot(merchTot) {
+//     var orderTot;
+//     if (merchTot >= 100) {
+//         orderTot = merchTot;
+//     }
+//     else if (merchTot < 50.01) {
+//         orderTot = merchTot + 5;
+//     }
+//     else {
+//         orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+//     }
+//     return orderTot;
+// }
+
+// var totalToCharge = calcTot(79.99);
+
+// var totalToCharge = 85.00;
+
+// var totalToCharge = merchTotal;
+
+// var totalToCharge = merchTotal + ship + tax;
+
+// var totalToCharge = calcTot(79.99);
+
+// ============= Chp 38: Functions: Local vs. global variables =============
+
+// Global Variable: 
+// var theSum;
+// addNumbers();
+
+// function addNumbers() {
+//     theSum = 2 + 2;
+//     }
+
+// Local Variable:
+// function addNumbers() {
+//     var theSum = 2 + 2;
+//     }
+
+// ============= Chp 39: switch statements:How to start them =============
+
+// switch (dayOfWk) {
+//     case "Sat":
+//         alert("Whoopee");
+//         break;
+//     case "Sun":
+//         alert("Whoopee");
+//         break;
+//     case "Fri":
+//         alert("TGIF!");
+//         break;
+//     default:
+//         alert("Shoot me now!");
+// }
+
+// ============= Chp 40: switch statements:How to complete them =============
+
+// switch (dayOfWk) {
+//     case "Sat":
+//         alert("Whoopee");
+//         break;
+//     case "Sun":
+//         alert("Whoopee");
+//         break;
+//     case "Fri":
+//         alert("TGIF!");
+//         break;
+//     default:
+//         alert("Shoot me now!");
+// }
+
+    // Completing switch statement:
+    // default :
+    // alert("Shoot me now!");
+    // }
