@@ -818,7 +818,7 @@
 // </body>
 // </html>
 
-// ============= Chp 58: The DOM: Finding children =============
+// ============= Chp 60: The DOM: Finding children =============
 
 // var eField = document.getElementById("email");
 // var eField = document.getElementsByTagName("p");
@@ -838,6 +838,108 @@
 // var p = document.childNodes[0].childNodes[1].childNodes[1].childNodes[1];
 // var contents = p.innerHTML;
 
-var d = document.getElementById("ny");
-var p = d.childNodes[1];
-var contents = p.innerHTML;
+// var d = document.getElementById("ny");
+// var p = d.childNodes[1];
+// var contents = p.innerHTML;
+
+// ============= Chp 60: The DOM: Junk artifacts and nodeType =============
+
+// Output is in HTML File
+
+// ============= Chp 62: The DOM: More ways to target elements =============
+
+// var targetNode = parentNode.childNodes[0];
+
+// var targetNode = parentNode.firstChild;
+
+// var targetNode = parentNode.childNodes[2];
+
+// var targetNode = parentNode.childNodes[2];
+
+// var kidNode = document.getElementById("div2");
+// var pNode = kidNode.parentNode;
+
+// var firstEl = document.getElementById("div1");
+// secondEl = firstEl.nextSibling;
+
+// var firstEl = document.getElementById("div1");
+// secondEl = firstEl.nextSibling;
+
+// ============= Chp 63: The DOM: Getting a target's name =============
+
+// var nType = targetNode.nodeType;
+
+// var parent = document.getElementById("div1");
+// var target = parent.firstChild;
+// nName = target.nodeName;
+
+// var parent = document.getElementById("div1");
+// var target = parent.firstChild;
+// nName = target.nodeName;
+
+// ============= Chp 64: The DOM: Counting elements =============
+
+// var liElements = getElementsByTagName("li");
+
+// var howManyLi = liElements.length;
+
+// for (var i = 0; i < howManyLi; i++) {
+//     if (liElements[i].innerHTML === "") {
+//     liElements[i].innerHTML = "coming soon";
+//     }
+//     }
+   
+// ============= Chp 65: The DOM: Attributes =============
+
+// var target = document.getElementById("p1");
+// var hasClass = target.hasAttribute("class");
+
+// var target = document.getElementById("p1");
+// var hasClass = target.hasAttribute("class");
+
+// var target = document.getElementById("p1");
+// var hasClass = target.hasAttribute("class");
+
+// ============= Chp 66: The DOM: Attribute names and value =============
+
+// var list = document.getElementById("p1").attributes;
+
+// var numOfItems = list.length;
+
+// var numOfItems = document.getItemById("p1").attributes.length;
+
+// ============= Chp 67: The DOM: Adding nodes =============
+
+// var nodeToAdd = document.createElement("p");
+
+// var imgNodeToAdd = document.createElement("img");
+
+// nodeToAdd.setAttribute("class", "regular");
+
+// imgNodeToAdd.setAttribute("border", "1");
+
+// var newTxt = document.createTextNode("Hello!");
+
+// nodeToAdd.appendChild(newTxt);
+
+// ============= Chp 68: The DOM: Inserting nodes =============
+
+// var parentDiv = document.getElementById("div1");
+// var newParagraph = document.createElement("p");
+// var t = document.createTextNode("Hello world!");
+// newParagraph.appendChild(t);
+// parentDiv.appendChild(newParagraph);
+
+// var parentDiv = document.getElementById("div1");
+// var newParagraph = document.createElement("p");
+// var t = document.createTextNode("Hello world!");
+// newParagraph.appendChild(t);
+// paragraph1 = parentDiv.firstChild;
+// parentDiv.insertBefore(newParagraph, paragraph1);
+
+// var target = parentDiv.childNodes[1];
+// parentDiv.insertBefore(newE, target.nextSibling);
+
+// var parentDiv = document.getElementById("div1");
+// var nodeToRemove = parentDiv.childNodes[2];
+// parentDiv.removeChild(nodeToRemove);
